@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-gw^&jlnn51ipv3+971hhb%)4gb4ek5l5875ucd1#rqo80t^_t$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['developer-sajjad.onrender.com']
+ALLOWED_HOSTS = ['developer-sajjad.pythonanywhere.com']
 
 # Application definition
 
@@ -47,8 +47,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-]
+    'whitenoise.middleware.WhiteNoiseMiddleware'
+    ]
 
 ROOT_URLCONF = 'cv.urls'
 
